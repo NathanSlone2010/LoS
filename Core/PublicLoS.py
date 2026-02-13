@@ -1,6 +1,19 @@
 import time
 import random
+import sys
+import subprocess
+import os
 #this is for certain things that are primarily for aesthetics, though random is fully needed.
+
+
+audio_file = "Dark_is_the_night.mp3"
+if sys.platform.startswith("win"):
+    os.startfile(audio_file)
+elif sys.platform.startswith("darwin"):
+    subprocess.run(["afplay", audio_file])
+else:
+    subprocess.run(["xdg-open", audio_file])
+#Download the file for the song, or just comment out this line. You can also change the song if you wish.
 
 
 cylinder_size = 6
@@ -14,7 +27,7 @@ time.sleep(0.5); print("Predecessor: Nokoribi")
 time.sleep(1); print("\nThe first game of Nathan T.S [Tiktok: void_developers]")
 time.sleep(1.5); print("Date of Production: February 12th, 2025 [3:53PM]")
 time.sleep(1.5); print(" GitHub Account: NathanSlone2010")
-time.sleep(1.5); print("  VERS. 3.08.03")
+time.sleep(1.5); print("  VERS. 4.08.03")
 time.sleep(1.5); print("   RATING: 14+")
 time.sleep(1.5); print("    This game is the first ever game of production... Enjoy \n")
 print("TO ACCESS GAME HISTORY LOGS: LOG")
@@ -67,7 +80,7 @@ while True:
             time.sleep(2); print("...They will be missed...")
             time.sleep(1.8); break
         else:
-            print("You point the gub at the guard... Click, the gun fires, the guard's body slumps to the ground...")
+            print("You point the gun at the guard... Click, the gun fires, the guard's body slumps to the ground...")
             time.sleep(1.5); print("You saved yourself and the woman... But for how long..?")
             time.sleep(1); print("DAYS: 216, but then they found you and the woman...")
             time.sleep(1); break
