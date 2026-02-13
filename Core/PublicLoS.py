@@ -17,6 +17,7 @@ time.sleep(1.5); print(" GitHub Account: NathanSlone2010")
 time.sleep(1.5); print("  VERS. 3.08.03")
 time.sleep(1.5); print("   RATING: 14+")
 time.sleep(1.5); print("    This game is the first ever game of production... Enjoy \n")
+print("TO ACCESS GAME HISTORY LOGS: LOG")
 print("\nThe REVOLVERS lay in front of you...")
 #standard introduction.
 
@@ -70,4 +71,9 @@ while True:
             time.sleep(1.5); print("You saved yourself and the woman... But for how long..?")
             time.sleep(1); print("DAYS: 216, but then they found you and the woman...")
             time.sleep(1); break
+        
+    if choice == "LOG":
+        print("WARNING: RUNNING THIS COMMAND WILL STOP THE PROGRAM.")
+        time.sleep(2); print(" 3.9.03: Added the LOGS [evething before is lost from LOGS]")
+        time.sleep(5); break
 #this is the actual game itself
