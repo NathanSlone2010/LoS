@@ -14,7 +14,7 @@ time.sleep(0.5); print("Predecessor: Nokoribi")
 time.sleep(1); print("\nThe first game of Nathan T.S [Tiktok: void_developers]")
 time.sleep(1.5); print("Date of Production: February 12th, 2025 [3:53PM]")
 time.sleep(1.5); print(" GitHub Account: NathanSlone2010")
-time.sleep(1.5); print("  VERS. 3.05.01")
+time.sleep(1.5); print("  VERS. 3.06.02")
 time.sleep(1.5); print("   RATING: 14+")
 time.sleep(1.5); print("    This game is the first ever game of production... Enjoy \n")
 print("\nThe REVOLVERS lay in front of you...")
@@ -43,8 +43,11 @@ while True:
             print("Collect your survival prize...")
 
     if choice == "2":
-        time.sleep(0.5); print("You point it at the woman... She survives.. \n")
+        time.sleep(0.5); print("You point it at the woman...\n")
         if random.random() < odds:
-            print("The gun fires... The woman slumps in her chair...")
-            print("HOW WILL YOU LIVE WITH YOURSELF?")
-            time.sleep(1); print("A NEW OPPONENT ENTERS THE ROOM... \n")
+            print("She survives, tears wells in her eyes...")
+        else:
+           print("The gun fires... The woman slumps in her chair...")
+           time.sleep(1.2); print("You survived, but at what costs...? HOW WILL YOU LIVE WITH YOURSLEF???")
+           time.sleep(2.4); print("Come and collect your prize...")
+           time.sleep(3); break
