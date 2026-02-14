@@ -7,17 +7,20 @@ import platform
 #These are the basic module needs.
 
 audio_file = "Dark_is_the_night.mp3"
-
 pygame.mixer.init()
 pygame.mixer.music.load(audio_file)
 pygame.mixer.music.play(-1)  # -1 loops indefinitely
 #This allows the audio to play
 
+
 os_type = platform.system()
 if os_type == "Windows":
     print("\nOperating System owner: Microsoft | WINDOWS-OS")
 elif os_type == "Darwin":
-    print("\nOperating System owner: Apple | MacOS")
+    if os.path.exists("/Applications") and os.path.exists("/System/Library"):
+        print("\nOperating System owner: Apple | MacOS")
+    else:
+        print("\nOperating System owner: Apple | iOS")
 elif os_type == "Linux":
     print("\nOperating System owner: OPEN SOURCE OS | Linux Kernel")
 elif os_type in ["FreeBSD", "OpenBSD", "NetBSD"]:
