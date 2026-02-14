@@ -18,6 +18,8 @@ if os_type == "Windows":
     print("\nOperating System owner: Microsoft | WINDOWS-OS")
 elif os_type == "Darwin":
     print("\nOperating System owner: Apple Computer, Inc. | MacOS")
+elif os_type == "iOS":
+    print("\nOperatinf System owner: Apple Computer, Inc. | iOS")
 elif os_type == "Linux":
     print("\nOperating System owner: OPEN SOURCE OS | Linux Kernel")
 elif os_type in ["FreeBSD", "OpenBSD", "NetBSD"]:
