@@ -3,6 +3,7 @@ import random
 import sys
 import os
 import pygame
+import platform
 #These are the basic module needs.
 
 audio_file = "Dark_is_the_night.mp3"
@@ -11,6 +12,19 @@ pygame.mixer.init()
 pygame.mixer.music.load(audio_file)
 pygame.mixer.music.play(-1)  # -1 loops indefinitely
 #This allows the audio to play
+
+os_type = platform.system()
+if os_type == "Windows":
+    print("\nOperating System owner: Microsoft | WINDOWS-OS")
+elif os_type == "Darwin":
+    print("\nOperating System owner: Apple | MacOS")
+elif os_type == "Linux":
+    print("\nOperating System owner: OPEN SOURCE OS | Linux Kernel")
+elif os_type in ["FreeBSD", "OpenBSD", "NetBSD"]:
+    print("\nOperating System owner: OPEN SOURCE OS | BSD")
+else:
+    print("\nUNKOWN OPERATING SYSTEM DETECTED... PROGRAM MAY NOT RUN AS EFFIECIENTLY")
+#This gives recogntion of OS. This is more or so a test of my own capabilities. Feel free to remove!
 
 
 cylinder_size = 6
@@ -25,7 +39,7 @@ time.sleep(0.5); print("Predecessor: Nokoribi")
 time.sleep(1); print("\nThe first game of Nathan T.S [Tiktok: void_developers]")
 time.sleep(1.5); print("Date of Production: February 12th, 2025 [3:53PM]")
 time.sleep(1.5); print(" GitHub Account: NathanSlone2010")
-time.sleep(1.5); print("  VERS. 4.08.03")
+time.sleep(1.5); print("  VERS. 4.09.03")
 time.sleep(1.5); print("   RATING: 14+")
 time.sleep(1.5); print("    This game is the first ever game of production... Enjoy \n")
 print("TO ACCESS GAME HISTORY LOGS: LOG")
@@ -68,6 +82,7 @@ try:
                 time.sleep(1.2); print("You survived, but at what costs...? HOW WILL YOU LIVE WITH YOURSLEF???")
                 time.sleep(2.4); print("\n\nCome and collect your prize...")
                 time.sleep(3); break
+
 
         if choice == "3":
             time.sleep(1); print("You face the guard, looking at him with hatred...\n")
