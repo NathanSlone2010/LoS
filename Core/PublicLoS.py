@@ -18,8 +18,6 @@ if os_type == "Windows":
     print("\nOperating System owner: Microsoft | WINDOWS-OS")
 elif os_type == "Darwin":
     print("\nOperating System owner: Apple Computer, Inc. | MacOS")
-elif os_type == "iOS":
-    print("\nOperatinf System owner: Apple Computer, Inc. | iOS")
 elif os_type == "Linux":
     print("\nOperating System owner: OPEN SOURCE OS | Linux Kernel")
 elif os_type in ["FreeBSD", "OpenBSD", "NetBSD"]:
@@ -41,7 +39,7 @@ time.sleep(0.5); print("Predecessor: Nokoribi")
 time.sleep(1); print("\nThe first game of Nathan T.S [Tiktok: void_developers]")
 time.sleep(1.5); print("Date of Production: February 12th, 2025 [3:53PM]")
 time.sleep(1.5); print(" GitHub Account: NathanSlone2010")
-time.sleep(1.5); print("  VERS. 4.09.03")
+time.sleep(1.5); print("  VERS. 3.10.03")
 time.sleep(1.5); print("   RATING: 14+")
 time.sleep(1.5); print("    This game is the first ever game of production... Enjoy \n")
 print("TO ACCESS GAME HISTORY LOGS: LOG")
@@ -49,7 +47,7 @@ print("\nThe REVOLVERS lay in front of you...")
 #standard introduction.
 
 try:
-    while True:
+  while True:
         print("The CYLINDER SPINS...\n")
         time.sleep(1); print("1. Shoot yourself...")
         time.sleep(1.5); print("2. Shoot the woman....")
@@ -100,7 +98,7 @@ try:
 
         if choice == "LOG":
             print("WARNING: RUNNING THIS COMMAND WILL STOP THE PROGRAM.")
-            time.sleep(2); print(" 3.9.03: Added the LOGS [everything before is lost from LOGS]")
+            time.sleep(2); print(" 3.9.3: Added the LOGS [everything before is lost from LOGS] | 3.10.3: Created iOS-based version if LoS")
             time.sleep(5); break
 
 
