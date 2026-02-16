@@ -98,7 +98,7 @@ try:
 
         if choice == "LOG":
             print("WARNING: RUNNING THIS COMMAND WILL STOP THE PROGRAM.")
-            time.sleep(2); print(" 3.9.3: Added the LOGS [everything before is lost from LOGS] | 3.10.3: Created iOS-based version if LoS")
+            time.sleep(2); print(" 3.9.3: Added the LOGS [everything before is lost from LOGS] | 3.10.3: Created iOS-based version if LoS | 4.10.3: Created a way to prevent user-issues")
             time.sleep(5); break
 
         if choice not in ["1", "2", "3", "LOG"]:
