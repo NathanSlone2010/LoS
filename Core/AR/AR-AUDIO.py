@@ -6,6 +6,7 @@ import platform
 import pygame
 #These are the basic module needs.
 
+#MESSAGE TO iOS USERS! REMOVE PYGAME AND AUDIO-RELATED STUFF IF YOU WANT TO USE THE UPDATED VERSIONS!
 
 audio_file = "The_Gambler.mp3"
 pygame.mixer.init()
@@ -87,6 +88,8 @@ while True:
             time.sleep(1.2); print("You survived.")
             print(f"PRIZE COUNTER: {pcf}")
 
+    if choice not in ["1", "2", "LOG"]:
+            print("You did not even make a choice... MAKE ONE OR LOSE YOUR PRIZE.")
 
     if choice == "LOG":
         print("WARNING: RUNNING THIS COMMAND WILL STOP THE PROGRAM.")
