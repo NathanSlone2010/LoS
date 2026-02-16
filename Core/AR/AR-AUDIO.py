@@ -6,9 +6,10 @@ import platform
 import pygame
 #These are the basic module needs.
 
+
 #MESSAGE TO iOS USERS! REMOVE PYGAME AND AUDIO-RELATED STUFF IF YOU WANT TO USE THE UPDATED VERSIONS!
 
-audio_file = "The_Gambler.mp3"
+audio_file = "You_or_Her?.mp3"
 pygame.mixer.init()
 pygame.mixer.music.load(audio_file)
 pygame.mixer.music.play(-1)
@@ -43,7 +44,7 @@ time.sleep(0.5); print("Parent Game: Life of Sorrows")
 time.sleep(1); print("\nThe second game of Nathan T.S [Tiktok: void_developers]")
 time.sleep(1.5); print("Date of Production: February 15th, 2026 [3:37PM]")
 time.sleep(1.5); print(" GitHub Account: NathanSlone2010")
-time.sleep(1.5); print("  VERS. 2.00.00")
+time.sleep(1.5); print("  VERS. 2.01.00")
 time.sleep(1.5); print("   RATING: 14+")
 print("\nTO ACCESS GAME HISTORY LOGS: LOG")
 time.sleep(1.2); print("Don't forget... The winning prize is one-hundred thousand dollars per round survived...")
@@ -79,19 +80,16 @@ while True:
 
     if choice == "2":
         time.sleep(0.5); print("You point it at your opponent...\n")
-        pcf = prize * pcount
         if random.random() < odds:
             time.sleep(1); print("Opponent survives...\n")
-            print(f"PRIZE COUNTER: {pcf}")
         else:
             print("The gun fires... The opponent slumps in their chair...")
             time.sleep(1.2); print("You survived.")
-            print(f"PRIZE COUNTER: {pcf}")
 
     if choice not in ["1", "2", "LOG"]:
             print("You did not even make a choice... MAKE ONE OR LOSE YOUR PRIZE.")
 
     if choice == "LOG":
         print("WARNING: RUNNING THIS COMMAND WILL STOP THE PROGRAM.")
-        time.sleep(2); print(" 1.0.0: Added the core code | 2.0.0: Added pygame for audio support. For iOS users, the old version without it will be up still, although outdated [sorry].")
+        time.sleep(2); print(" 1.0.0: Added the core code | 2.0.0: Added pygame for audio support. For iOS users, the old version without it will be up still, although outdated [sorry] | 2.1.0: Fixed a bit of the logic fallacies.")
         time.sleep(5); break
