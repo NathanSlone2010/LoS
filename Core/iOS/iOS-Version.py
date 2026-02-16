@@ -7,16 +7,8 @@ import platform
 
 
 os_type = platform.system()
-if os_type == "Windows":
-    print("\nOperating System owner: Microsoft | WINDOWS-OS")
-elif os_type == "Darwin":
-    print("\nOperating System owner: Apple Computer, Inc. | MacOS")
-elif os_type == "iOS":
-    print("\nOperating System owner: Apple Computers, Inc. | iOS")
-elif os_type == "Linux":
-    print("\nOperating System owner: OPEN SOURCE OS | Linux Kernel")
-elif os_type in ["FreeBSD", "OpenBSD", "NetBSD"]:
-    print("\nOperating System owner: OPEN SOURCE OS | BSD")
+if os_type == "iOS":
+    print("\nOperating System owner: Apple Computer, Inc. | iOS")
 else:
     print("\nUNKNOWN OPERATING SYSTEM DETECTED... PROGRAM MAY NOT RUN AS EFFIECIENTLY")
 #This gives recogntion of OS. This is more or so a test of my own capabilities. Feel free to remove!
@@ -34,7 +26,7 @@ time.sleep(0.5); print("Predecessor: Nokoribi")
 time.sleep(1); print("\nThe first game of Nathan T.S [Tiktok: void_developers]")
 time.sleep(1.5); print("Date of Production: February 12th, 2026 [3:53PM]")
 time.sleep(1.5); print(" GitHub Account: NathanSlone2010")
-time.sleep(1.5); print("  VERS. 3.10.03; iOS-Version")
+time.sleep(1.5); print("  VERS. 3.11.03; iOS-Version")
 time.sleep(1.5); print("   RATING: 14+")
 time.sleep(1.5); print("    This game is the first ever game of production... Enjoy \n")
 print("TO ACCESS GAME HISTORY LOGS: LOG")
@@ -91,7 +83,12 @@ while True:
                 time.sleep(1); print("DAYS: 216, but then they found you and the woman...")
                 time.sleep(1); break
 
+
+        if choice not in ["1", "2", "3", "LOG"]:
+            print("You did not even make a choice... MAKE ONE OR LOSE YOUR PRIZE.")
+
+
         if choice == "LOG":
             print("WARNING: RUNNING THIS COMMAND WILL STOP THE PROGRAM.")
-            time.sleep(2); print(" 3.9.3: Added the LOGS [everything before is lost from LOGS] | 3.10.3: Created iOS-based version if LoS")
+            time.sleep(2); print(" 3.9.3: Added the LOGS [everything before is lost from LOGS] | 3.10.3: Created iOS-based version if LoS | 4.10.3: Created a way to prevent user issues.")
             time.sleep(5); break
