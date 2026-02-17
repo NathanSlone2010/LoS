@@ -6,7 +6,7 @@ import pygame
 import platform
 #These are the basic module needs.
 
-audio_file = "The_Gambler.mp3"
+audio_file = "Sic_Bo.mp3"
 pygame.mixer.init()
 pygame.mixer.music.load(audio_file)
 pygame.mixer.music.play(-1)
@@ -39,16 +39,23 @@ time.sleep(0.5); print("Predecessor: Nokoribi")
 time.sleep(1); print("\nThe first game of Nathan T.S [Tiktok: void_developers]")
 time.sleep(1.5); print("Date of Production: February 12th, 2026 [3:53PM]")
 time.sleep(1.5); print(" GitHub Account: NathanSlone2010")
-time.sleep(1.5); print("  VERS. 4.10.03")
+time.sleep(1.5); print("  VERS. 5.10.3")
 time.sleep(1.5); print("   RATING: 14+")
 time.sleep(1.5); print("    This game is the first ever game of production... Enjoy \n")
 print("TO ACCESS GAME HISTORY LOGS: LOG")
 print("\nThe REVOLVERS lay in front of you...")
 #standard introduction.
 
+
+
 try:
-  while True:
-        print("The CYLINDER SPINS...\n")
+    while True:
+        con = input("Press E to continue: ")
+        if con in ["E", "e"]:
+            break
+        print("PRESS E")
+    while True:
+        print("\nThe CYLINDER SPINS...\n")
         time.sleep(1); print("1. Shoot yourself...")
         time.sleep(1.5); print("2. Shoot the woman....")
         time.sleep(3); print("3. REVENGE.....")
@@ -83,7 +90,6 @@ try:
                 time.sleep(2.4); print("\n\nCome and collect your prize...")
                 time.sleep(3); break
 
-
         if choice == "3":
             time.sleep(1); print("You face the guard, looking at him with hatred...\n")
             if random.random() < odds:
@@ -98,7 +104,7 @@ try:
 
         if choice == "LOG":
             print("WARNING: RUNNING THIS COMMAND WILL STOP THE PROGRAM.")
-            time.sleep(2); print(" 3.9.3: Added the LOGS [everything before is lost from LOGS] | 3.10.3: Created iOS-based version if LoS | 4.10.3: Created a way to prevent user-issues")
+            time.sleep(2); print(" 3.9.3: Added the LOGS [everything before is lost from LOGS] | 3.10.3: Created iOS-based version if LoS | 4.10.3: Created a way to prevent user-issues | 5.10.3: Added a 'press E to continue' function, meant to make the game more modernised, even if it looks retro. ")
             time.sleep(5); break
 
         if choice not in ["1", "2", "3", "LOG"]:
