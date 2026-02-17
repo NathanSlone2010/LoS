@@ -28,9 +28,11 @@ else:
 
 
 cylinder_size = 6
-odds = 4 / cylinder_size
+odds = 4 / cylinder_size #set the '4' to '0' if you are testing new stuff.
 days = 0
 count = 0
+prize = 200000
+pcount = 2
 #these all make the game functional. Too many to go in-depth with.
 
 
@@ -39,11 +41,10 @@ time.sleep(0.5); print("Predecessor: Nokoribi")
 time.sleep(1); print("\nThe first game of Nathan T.S [Tiktok: void_developers]")
 time.sleep(1.5); print("Date of Production: February 12th, 2026 [3:53PM]")
 time.sleep(1.5); print(" GitHub Account: NathanSlone2010")
-time.sleep(1.5); print("  VERS. 5.10.3")
+time.sleep(1.5); print("  VERS. 5.11.3")
 time.sleep(1.5); print("   RATING: 14+")
 time.sleep(1.5); print("    This game is the first ever game of production... Enjoy \n")
 print("TO ACCESS GAME HISTORY LOGS: LOG")
-print("\nThe REVOLVERS lay in front of you...")
 #standard introduction.
 
 
@@ -52,10 +53,11 @@ try:
     while True:
         con = input("Press E to continue: ")
         if con in ["E", "e"]:
+            print("\nThe REVOLVER lays in front of you...")
             break
         print("PRESS E")
     while True:
-        print("\nThe CYLINDER SPINS...\n")
+        time.sleep(0.3); print("\nThe CYLINDER SPINS...\n")
         time.sleep(1); print("1. Shoot yourself...")
         time.sleep(1.5); print("2. Shoot the woman....")
         time.sleep(3); print("3. REVENGE.....")
@@ -72,17 +74,21 @@ try:
                 time.sleep(1.5); print("...They will be missed..")
                 break
             else:
+                pcf = prize * pcount
                 count += 1
                 time.sleep(0.3); print("Click... You survive. \n")
                 print("Collect your survival prize...")
                 print(f"DAYS: {days}")
+                time.sleep(1); print(f"Prize Count: {pcf}")
 
         if choice == "2":
             time.sleep(0.5); print("You point it at the woman...\n")
+            pcf = prize * pcount
             days += 1
             if random.random() < odds:
                 time.sleep(1); print("She survives, tears wells in her eyes...\n")
                 time.sleep(0.5); print(f"DAYS: {days}")
+                time.sleep(1); print(f"Prize Count: {pcf}")
             else:
                 time.sleep(1); print("PLease... no.. I have a child..!\n")
                 print("The gun fires... The woman slumps in her chair...")
@@ -104,7 +110,7 @@ try:
 
         if choice == "LOG":
             print("WARNING: RUNNING THIS COMMAND WILL STOP THE PROGRAM.")
-            time.sleep(2); print(" 3.9.3: Added the LOGS [everything before is lost from LOGS] | 3.10.3: Created iOS-based version if LoS | 4.10.3: Created a way to prevent user-issues | 5.10.3: Added a 'press E to continue' function, meant to make the game more modernised, even if it looks retro. ")
+            time.sleep(2); print(" 3.9.3: Added the LOGS [everything before is lost from LOGS] | 3.10.3: Created iOS-based version if LoS | 4.10.3: Created a way to prevent user-issues | 5.10.3: Added a 'press E to continue' function, meant to make the game more modernised, even if it looks retro | 5.11.3: Imported AR game's prize counter to this game.")
             time.sleep(5); break
 
         if choice not in ["1", "2", "3", "LOG"]:
