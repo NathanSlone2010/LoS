@@ -44,13 +44,20 @@ time.sleep(0.5); print("Parent Game: Life of Sorrows")
 time.sleep(1); print("\nThe second game of Nathan T.S [Tiktok: void_developers]")
 time.sleep(1.5); print("Date of Production: February 15th, 2026 [3:37PM]")
 time.sleep(1.5); print(" GitHub Account: NathanSlone2010")
-time.sleep(1.5); print("  VERS. 2.01.00")
+time.sleep(1.5); print("  VERS. 3.01.00")
 time.sleep(1.5); print("   RATING: 14+")
 print("\nTO ACCESS GAME HISTORY LOGS: LOG")
 time.sleep(1.2); print("Don't forget... The winning prize is one-hundred thousand dollars per round survived...")
 print("Shooting your opponent, even if they live or die, will not boost your prize count...")
 print("\n\nThe REVOLVERS lay in front of you...")
 #standard introduction.
+
+
+while True:
+    cont = input("Press E to continue: ")
+    if cont in ["E", "e"]:
+        break
+    print("PRESS E")
 
 
 while True:
@@ -91,5 +98,5 @@ while True:
 
     if choice == "LOG":
         print("WARNING: RUNNING THIS COMMAND WILL STOP THE PROGRAM.")
-        time.sleep(2); print(" 1.0.0: Added the core code | 2.0.0: Added pygame for audio support. For iOS users, the old version without it will be up still, although outdated [sorry] | 2.1.0: Fixed a bit of the logic fallacies.")
+        time.sleep(2); print(" 1.0.0: Added the core code | 2.0.0: Added pygame for audio support. For iOS users, the old version without it will be up still, although outdated [sorry] | 2.1.0: Fixed a bit of the logic fallacies | 3.1.0: Added a 'press E to continue' function in the code.")
         time.sleep(5); break
