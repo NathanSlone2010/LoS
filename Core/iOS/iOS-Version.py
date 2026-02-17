@@ -35,6 +35,13 @@ print("\nThe REVOLVERS lay in front of you...")
 
 
 while True:
+    cont = input("Press E to continue: ")
+    if cont in ["E", "e"]:
+        break
+    print("PRESS E")
+
+
+while True:
         print("The CYLINDER SPINS...\n")
         time.sleep(1); print("1. Shoot yourself...")
         time.sleep(1.5); print("2. Shoot the woman....")
