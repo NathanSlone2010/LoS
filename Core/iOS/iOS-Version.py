@@ -26,7 +26,7 @@ time.sleep(0.5); print("Predecessor: Nokoribi")
 time.sleep(1); print("\nThe first game of Nathan T.S [Tiktok: void_developers]")
 time.sleep(1.5); print("Date of Production: February 12th, 2026 [3:53PM]")
 time.sleep(1.5); print(" GitHub Account: NathanSlone2010")
-time.sleep(1.5); print("  VERS. 3.11.03; iOS-Version")
+time.sleep(1.5); print("  VERS. 3.11.04; iOS-Version")
 time.sleep(1.5); print("   RATING: 14+")
 time.sleep(1.5); print("    This game is the first ever game of production... Enjoy \n")
 print("TO ACCESS GAME HISTORY LOGS: LOG")
@@ -45,7 +45,7 @@ while True:
         print("The CYLINDER SPINS...\n")
         time.sleep(1); print("1. Shoot yourself...")
         time.sleep(1.5); print("2. Shoot the woman....")
-        time.sleep(3); print("3. REVENGE.....")
+        time.sleep(2); print("3. REVENGE.....")
         choice = input(">>> ")
 
         bullet = random.randint(1, cylinder_size)
@@ -71,7 +71,7 @@ while True:
                 time.sleep(1); print("She survives, tears wells in her eyes...\n")
                 time.sleep(0.5); print(f"DAYS: {days}")
             else:
-                time.sleep(1); print("PLease... no.. I have a child..!\n")
+                time.sleep(1); print("Please... no.. I have a child..!\n")
                 print("The gun fires... The woman slumps in her chair...")
                 time.sleep(1.2); print("You survived, but at what costs...? HOW WILL YOU LIVE WITH YOURSLEF???")
                 time.sleep(2.4); print("\n\nCome and collect your prize...")
@@ -97,5 +97,5 @@ while True:
 
         if choice == "LOG":
             print("WARNING: RUNNING THIS COMMAND WILL STOP THE PROGRAM.")
-            time.sleep(2); print(" 3.9.3: Added the LOGS [everything before is lost from LOGS] | 3.10.3: Created iOS-based version if LoS | 4.10.3: Created a way to prevent user issues.")
+            time.sleep(2); print(" 3.9.3: Added the LOGS [everything before is lost from LOGS] | 3.10.3: Created iOS-based version if LoS | 3.11.3: Created a way to prevent user issues | 3.11.4: Tweaked the time for the options to appear.")
             time.sleep(5); break
