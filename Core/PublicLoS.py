@@ -15,15 +15,17 @@ pygame.mixer.music.play(-1)
 
 os_type = platform.system()
 if os_type == "Windows":
-    print("\nOperating System owner: Microsoft | WINDOWS-OS")
+    print("\033[1;31mOperating System owner: Microsoft | WINDOWS-OS\033[0m")
 elif os_type == "Darwin":
-    print("\nOperating System owner: Apple Computer, Inc. | MacOS")
+    print("\033[1;31mOperating System owner: Apple Computer, Inc. | MacOS\033[0m")
 elif os_type == "Linux":
-    print("\nOperating System owner: OPEN SOURCE OS | Linux Kernel")
+    print("\033[1;31mOperating System owner: OPEN SOURCE OS | Linux Kernel\033[0m")
 elif os_type in ["FreeBSD", "OpenBSD", "NetBSD"]:
-    print("\nOperating System owner: OPEN SOURCE OS | BSD")
+    print("\033[1;31mOperating System owner: OPEN SOURCE OS | BSD\033[0m")
+elif os_type == "iOS":
+    print("\033[1;31mOperating System owner: Apple Computer, Inc. | iOS\033[0m")
 else:
-    print("\nUNKNOWN OPERATING SYSTEM DETECTED... PROGRAM MAY NOT RUN AS EFFIECIENTLY")
+    print("\033[1;31mUNKNOWN OPERATING SYSTEM DETECTED... PROGRAM MAY NOT RUN AS EFFICIENTLY\033[0m")
 #This gives recogntion of OS. This is more or so a test of my own capabilities. Feel free to remove!
 
 
