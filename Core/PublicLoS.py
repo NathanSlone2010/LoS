@@ -5,6 +5,8 @@ import os
 import pygame
 import platform
 #These are the basic module needs.
+#Manual installation of pygame needed.
+
 
 audio_file = "Radio.mp3"
 pygame.mixer.init()
