@@ -31,7 +31,7 @@ else:
 
 
 cylinder_size = 6
-odds = 2 / cylinder_size
+odds = 2 / cylinder_size #Change this when developing the game.
 #Must do prize + prize_count below for additive prize
 prize = 100000
 pcount = 2
