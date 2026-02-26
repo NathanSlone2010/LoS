@@ -5,6 +5,7 @@ import os
 import platform
 import pygame
 #These are the basic module needs.
+#Manual installation of pygame needed.
 
 
 #MESSAGE TO iOS USERS! REMOVE PYGAME AND AUDIO-RELATED STUFF IF YOU WANT TO USE THE UPDATED VERSIONS!
