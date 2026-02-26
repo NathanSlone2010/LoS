@@ -15,7 +15,7 @@ else:
 
 
 cylinder_size = 6
-odds = 4 / cylinder_size
+odds = 4 / cylinder_size #Change this when developing the game.
 days = 0
 count = 0
 #these all make the game functional. Too many to go in-depth with.
