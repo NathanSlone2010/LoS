@@ -6,7 +6,7 @@ import pygame
 import platform
 #These are the basic module needs.
 
-audio_file = "Sic_Bo.mp3"
+audio_file = "Radio.mp3"
 pygame.mixer.init()
 pygame.mixer.music.load(audio_file)
 pygame.mixer.music.play(-1)
@@ -25,7 +25,7 @@ elif os_type in ["FreeBSD", "OpenBSD", "NetBSD"]:
 elif os_type == "iOS":
     print("\033[1;31mOperating System owner: Apple Computer, Inc. | iOS\033[0m")
 else:
-    print("\033[1;31mUNKNOWN OPERATING SYSTEM DETECTED... PROGRAM MAY NOT RUN AS EFFICIENTLY\033[0m")
+   print("\n\033[91mUNKNOWN OPERATING SYSTEM DETECTED... PROGRAM MAY NOT RUN AS EFFIECIENTLY\033[m")
 #This gives recogntion of OS. This is more or so a test of my own capabilities. Feel free to remove!
 
 
