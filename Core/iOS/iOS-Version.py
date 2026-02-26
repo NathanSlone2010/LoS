@@ -8,9 +8,9 @@ import platform
 
 os_type = platform.system()
 if os_type == "iOS":
-    print("\033[1;31mOperating System owner: Apple Computer, Inc. | iOS\033[0m")
+    print("\033[94mOperating System owner: Apple Computer, Inc. | iOS\033[0m]")
 else:
-    print("\nUNKNOWN OPERATING SYSTEM DETECTED... PROGRAM MAY NOT RUN AS EFFIECIENTLY")
+    print("\n\033[91mUNKNOWN OPERATING SYSTEM DETECTED... PROGRAM MAY NOT RUN AS EFFIECIENTLY\033[m")
 #This gives recogntion of OS. This is more or so a test of my own capabilities. Feel free to remove!
 
 
