@@ -5,15 +5,18 @@ import os
 import pygame
 import platform
 #These are the basic module needs.
-#Manual installation of pygame needed.
+#Manual installation of pygame is needed.
 
 
-audio_file = "Radio.mp3"
+audio_file = "Darkness.mp3"
 pygame.mixer.init()
 pygame.mixer.music.load(audio_file)
 pygame.mixer.music.play(-1)
 #This allows the audio to play. Change the directory to your needs (recommend audio file to be in your HOME file)
 
+
+print("\033[91mNO ERRORS RETURNED\033[0m")
+#If users see this, it means there are no errors.
 
 os_type = platform.system()
 if os_type == "Windows":
