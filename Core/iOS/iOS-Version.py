@@ -6,6 +6,9 @@ import platform
 #These are the basic module needs.
 
 
+print("\033[91mNO ERROR RETURNED")
+#If a user sees this, the program ran properly.
+
 os_type = platform.system()
 if os_type == "iOS":
     print("\033[94mOperating System owner: Apple Computer, Inc. | iOS\033[0m")
