@@ -5,7 +5,7 @@ import os
 import platform
 import pygame
 #These are the basic module needs.
-#Manual installation of pygame needed.
+#Manual installation of pygame is needed.
 
 
 #MESSAGE TO iOS USERS! REMOVE PYGAME AND AUDIO-RELATED STUFF IF YOU WANT TO USE THE UPDATED VERSIONS!
@@ -15,6 +15,9 @@ pygame.mixer.init()
 pygame.mixer.music.load(audio_file)
 pygame.mixer.music.play(-1)
 #This allows the audio to play. Change the directory to your needs (recommend audio file to be in your HOME file)
+
+
+print("\033[91mNO ERROR RETURNED\033[m")
 
 
 os_type = platform.system()
