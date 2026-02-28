@@ -49,7 +49,7 @@ while True:
         time.sleep(1); print("1. Shoot yourself...")
         time.sleep(1.5); print("2. Shoot the woman....")
         time.sleep(2); print("3. REVENGE.....")
-        choice = input(">>> ")
+        choice = input("~$ ")
 
         bullet = random.randint(1, cylinder_size)
         position = random.randint(1, cylinder_size)
